@@ -8,6 +8,6 @@ with focusing on the login/registersion more than the search/filtering part
 6 / 26 / 2022
 
 # TODO - Which I Didn't complete
-* Send nofifcations when a section open, or it's possible to join the wait list
+* Send notifications when a section open, or it's possible to join the wait list
 * completeing the filtering part. By adding more options [Time, Days, ... ]
 * Auto registration of courses
