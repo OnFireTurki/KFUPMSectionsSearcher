@@ -12,4 +12,4 @@ with focusing on the login/registersion part more than the search/filtering part
 * completeing the filtering part. By adding more options [Time, Days, ... ]
 * Auto registration of courses
 
-![Alt text](pictures/s.png?raw=true "Single Search")
+![PIC](s.png?raw=true "Single Search")
