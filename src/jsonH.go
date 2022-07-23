@@ -4,7 +4,7 @@ import "fmt"
 
 // This file was created in order to simplify the json response handling
 // Note : we have to create struct to store the data but not all the data, only what we need
-// I hate typing comments anyway
+// I hate writing comments anyway
 
 // facultyInfo : struct storing the instructor inforamtion, sadly everything we need is just the name, maybe the email also
 type facultyInfoS struct {
@@ -25,7 +25,7 @@ type meetingTimeS struct {
 }
 
 // GetDays : Return days letters,
-// Any other idea ?
+// Any other ideas ?
 func (c *meetingTimeS) GetDays() string {
 	Days := ""
 	if c.Sunday {
@@ -72,7 +72,7 @@ func (Course *CourseDetails) CheckWaitList() bool {
 	return Course.OpenSection && Course.WaitAvailable > 0
 }
 
-// PrintIT : to print out details
+// PrintIT : to print out the details
 func (Course *CourseDetails) PrintIT() {
 	fmt.Printf("CRN: %v | Section : %v | Available Seats : %v | Instructor : %v | Include : \n", Course.CourseReferenceNumber, Course.SequenceNumber,
 		Course.SeatsAvailable, Course.Faculty[0].DisplayName)
@@ -84,7 +84,7 @@ func (Course *CourseDetails) PrintIT() {
 
 // JsonRes : To Get the Json Res
 type JsonRes struct {
-	// Totsl count of all available seciton
+	// Total count of all available seciton
 	TotalCount int `json:"totalCount"`
 	// For CourseDetails
 	Data []CourseDetails `json:"data"`
