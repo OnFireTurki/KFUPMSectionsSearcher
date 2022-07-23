@@ -47,7 +47,7 @@ func (W *Worker) GetAndActivate() {
 
 func (W *Worker) search() JsonRes {
 	req, _ := SendRequest("GET", fmt.Sprintf("https://banner9-registration.kfupm.edu.sa/StudentRegistrationSsb/ssb/searchResults/searchResults?txt_subject=%v&txt_courseNumber=%v&txt_term=%v&startDatepicker=&endDatepicker=&pageOffset=0&pageMaxSize=100&sortColumn=subjectDescription&sortDirection=asc&txt_campus=C", W.CourseSub, W.CourseNume, W.Term), "", map[string]string{"Cookie": "JSESSIONID=" + W.JSESSIONID}, nil, false)
-	// txt_campus : F / For female stupid sections
+	// txt_campus : F / For females stupid sections
 	res := JsonRes{}
 	json.Unmarshal([]byte(req.Body), &res)
 	return res
