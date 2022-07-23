@@ -64,7 +64,7 @@ func (W *Worker) filter(data JsonRes) {
 				}
 			}
 		}
-	} else { // I KNOW Missing statement wih the waitlistmode
+	} else { // I KNOW Missing a statement with the waitlistmode
 		// EVERYTHING
 		W.CurrentData = data.Data
 	}
